@@ -86,7 +86,7 @@ export default function Home() {
     }
   }
 
-  const v  = (utxo[2]?.utxoCount - utxo[utxo.length - 1].utxoCount) / calculateMinuteDifference(utxo[2]?.time, utxo[utxo.length - 1].time);
+  const v  = (utxo[1]?.utxoCount - utxo[utxo.length - 1].utxoCount) / calculateMinuteDifference(utxo[1]?.time, utxo[utxo.length - 1].time);
 
   return (<>
     <div>预计{(utxo[utxo.length - 1]?.utxoCount / v / 60).toFixed(2)}小时后结束</div>
