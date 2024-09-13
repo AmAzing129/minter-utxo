@@ -1,6 +1,7 @@
  
 export async function GET() {
   const res = await fetch("https://explorer.unisat.io/fractal-mainnet/api/address/summary?address=bc1pqw9ncs4sna0ndh85ux5dhh9swueyjql23t4em8j0smywkqsngfmsn7gmua", {
+    "cache": "no-store",
     "headers": {
       "accept": "application/json, text/plain, */*",
       "accept-language": "zh-CN,zh;q=0.9",
