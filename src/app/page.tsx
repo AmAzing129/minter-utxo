@@ -86,13 +86,7 @@ export default function Home() {
     }
   };
 
-  console.log(utxo[2]?.utxoCount, utxo[utxo.length - 1]?.utxoCount);
-
-  console.log(calculateMinuteDifference(utxo[2]?.time, utxo[utxo.length - 1]?.time));
-
   const v  = (utxo[2]?.utxoCount - utxo[utxo.length - 1]?.utxoCount) / calculateMinuteDifference(utxo[2]?.time, utxo[utxo.length - 1]?.time);
-
-  console.log(v);
 
   return (<>
     <div>预计{(utxo[utxo.length - 1]?.utxoCount / v / 60).toFixed(2)}小时后结束</div>
