@@ -84,7 +84,7 @@ export default function Home() {
         max: 170000,
       }
     }
-  }
+  };
 
   console.log(utxo[2]?.utxoCount - utxo[utxo.length - 1]?.utxoCount);
 
