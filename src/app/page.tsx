@@ -88,7 +88,7 @@ export default function Home() {
 
   console.log(utxo[2]?.utxoCount - utxo[utxo.length - 1]?.utxoCount);
 
-  console.log(calculateMinuteDifference(utxo[2]?.time, utxo[utxo.length - 1]?.time);
+  console.log(calculateMinuteDifference(utxo[2]?.time, utxo[utxo.length - 1]?.time));
 
   const v  = (utxo[2]?.utxoCount - utxo[utxo.length - 1]?.utxoCount) / calculateMinuteDifference(utxo[2]?.time, utxo[utxo.length - 1]?.time);
 
